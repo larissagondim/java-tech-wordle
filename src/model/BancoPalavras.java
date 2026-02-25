@@ -6,6 +6,7 @@ import java.util.Set;
 import java.util.Random;
 
 public class BancoPalavras {
+    // guarda palavras num array
     private String[] palavrasCincoLetras = {
             "ARRAY", "CLASS", "VALUE", "TYPES", "LOGIC", "CONST", "QUEUE", "CHILD", "FLOAT",
             "TUPLE", "LOOPS", "WHILE", "BREAK", "MERGE", "QUERY", "DEBUG", "PRINT", "INPUT",
@@ -29,11 +30,13 @@ public class BancoPalavras {
             "MERGE", "PATCH", "PATCH", "MIXIN", "ALIAS", "WHILE", "MATCH", "CURRY", "YIELD",
             "YIELD", "APPLY","BREAK", "PAINT"
     };
+
+    // organiza num conjunto para remover possíveis duplicatas
     Set<String> palavrasUnicas = new LinkedHashSet<>(Arrays.asList(palavrasCincoLetras));
-
     String[] arraySemDuplicatas = palavrasUnicas.toArray(new String[0]);
-    private Random sorteador = new Random();
 
+    // gera um sorteador para pegar uma palavra aleatória do, atual, pseudo banco de dados para o jogo
+    private Random sorteador = new Random();
     public String palavraSecreta() {
         return arraySemDuplicatas[sorteador.nextInt(arraySemDuplicatas.length)];
     }
