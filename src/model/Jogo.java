@@ -50,14 +50,13 @@ public class Jogo {
                         if (temNaPalavra) System.out.print("\uD83D\uDFe8");
                         else System.out.print("\u2B1B");
                     }
-
                 }
             }
         }
 
-        if (this.tentativas == this.maxTentativas && !this.chuteAtual.equals(this.palavraSecreta.toUpperCase())) {
+        if (this.tentativas == this.maxTentativas && !this.chuteAtual.equals(this.palavraSecreta.toUpperCase()))
             System.out.println("\nQue pena, suas tentativas acabaram! A palavra era: " + this.palavraSecreta);
-        }
+
 
         sc.close();
     }
