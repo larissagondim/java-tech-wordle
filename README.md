@@ -11,7 +11,9 @@ Instead of guessing everyday words, players must discover well-known programming
 
 The game follows the same rules as the original Wordle:
 - You have a limited number of **6** attempts.
+
 - After each guess, letters change color to indicate correctness: grey (wrong letter); yellow (right letter and wrong position); green (right letter and position); 
+
 - The objective is to guess the correct five-letter tech word.
 
 ---
