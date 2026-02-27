@@ -1,4 +1,5 @@
 package view;
+<<<<<<< HEAD
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -36,3 +37,10 @@ public class TelaJogo extends Application {
         launch(args);
     }
 }
+=======
+import model.Jogo;
+import javax.swing.*;
+
+public class TelaJogo {
+}
+>>>>>>> 11741083a641a4caa001f3be4d6d0ccda5f8993c
